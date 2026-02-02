@@ -1,91 +1,390 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Scirale Consulting</title>
-  <meta name="description" content="Scirale Consulting — Engineering, architecture, and AI-driven solutions."/>
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
-    header {
-      padding: 80px 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    p {
-      max-width: 720px;
-      margin: 0 auto 30px;
-      color: #cbd5f5;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .card {
-      background: #020617;
-      border-radius: 12px;
-      padding: 30px;
-      margin-bottom: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 40px;
-      color: #94a3b8;
-      font-size: 0.9rem;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scirale Consulting — Build for what’s next</title>
+  <meta name="description" content="Scirale Consulting builds scalable platforms, cloud-native systems, and AI-driven automation with engineering leadership you can trust." />
+  <meta property="og:title" content="Scirale Consulting — Build for what’s next" />
+  <meta property="og:description" content="Scalable platforms • Cloud-native delivery • AI-driven automation" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optional: nice modern font. Remove if you want 100% local. -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-
-<header>
-  <h1>Scirale Consulting</h1>
-  <p>Engineering excellence, scalable architectures, and AI-driven solutions for modern businesses.</p>
-</header>
-
-<section>
-  <div class="card">
-    <h2>What we do</h2>
-    <p>
-      We design and build high-performance backend systems, cloud-native platforms,
-      and intelligent products with a strong focus on reliability, security, and long-term scalability.
-    </p>
+  <div class="bg">
+    <div class="bg__stars"></div>
+    <div class="bg__blob bg__blob--a"></div>
+    <div class="bg__blob bg__blob--b"></div>
+    <div class="bg__grid"></div>
   </div>
 
-  <div class="card">
-    <h2>Expertise</h2>
-    <p>
-      • Software Architecture & APIs<br/>
-      • Cloud & DevOps (Docker, Kubernetes)<br/>
-      • AI-assisted systems & automation<br/>
-      • Technical leadership & consulting
-    </p>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Scirale Consulting</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#work">Outcomes</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="topbar__cta">
+        <button class="kbd" id="openPalette" type="button" title="Open Launchpad (Ctrl/Cmd + K)">
+          <span class="kbd__label">Launchpad</span>
+          <span class="kbd__keys"><span>⌘</span><span>K</span></span>
+        </button>
+        <a class="btn btn--primary" href="#contact">Start a project</a>
+      </div>
+
+      <button class="burger" id="burger" type="button" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#work">Outcomes</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn--primary" href="#contact">Start a project</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__left">
+          <div class="pill">
+            <span class="pill__dot"></span>
+            <span>Engineering, cloud, and AI — built for production</span>
+          </div>
+
+          <h1>
+            Build for what’s next.
+            <span class="h1__accent">Ship faster</span> with confidence.
+          </h1>
+
+          <p class="lead">
+            Scirale Consulting helps teams design scalable architectures, deliver cloud-native platforms,
+            and integrate AI automation—without compromising reliability, security, or speed.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#contact">Get a free call</a>
+            <a class="btn btn--ghost btn--lg" href="#services">Explore services</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__k">Architecture</div>
+              <div class="stat__v">Platform-ready designs</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">Delivery</div>
+              <div class="stat__v">Cloud + CI/CD excellence</div>
+            </div>
+            <div class="stat">
+              <div class="stat__k">AI</div>
+              <div class="stat__v">Automation with guardrails</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="panel">
+            <div class="panel__top">
+              <div class="panel__title">Project Launchpad</div>
+              <div class="panel__hint">Describe your project → get a plan</div>
+            </div>
+
+            <form class="search" id="projectForm">
+              <input
+                class="search__input"
+                id="projectInput"
+                type="text"
+                placeholder="Example: Migrate monolith → microservices, add observability, reduce latency…"
+                autocomplete="off"
+              />
+              <button class="btn btn--primary" type="submit">Generate outline</button>
+            </form>
+
+            <div class="panel__grid">
+              <div class="miniCard">
+                <div class="miniCard__icon">⚡</div>
+                <div class="miniCard__title">Fast assessment</div>
+                <div class="miniCard__desc">Identify risk, bottlenecks, and quick wins.</div>
+              </div>
+              <div class="miniCard">
+                <div class="miniCard__icon">🛰️</div>
+                <div class="miniCard__title">Roadmap</div>
+                <div class="miniCard__desc">A phased plan you can execute with your team.</div>
+              </div>
+              <div class="miniCard">
+                <div class="miniCard__icon">🛡️</div>
+                <div class="miniCard__title">Reliability</div>
+                <div class="miniCard__desc">SLOs, security, and incident readiness.</div>
+              </div>
+              <div class="miniCard">
+                <div class="miniCard__icon">🤖</div>
+                <div class="miniCard__title">AI automation</div>
+                <div class="miniCard__desc">Assist development and ops safely.</div>
+              </div>
+            </div>
+
+            <div class="panel__note" id="outlineBox" hidden>
+              <div class="panel__noteTitle">Generated outline</div>
+              <pre class="panel__noteText" id="outlineText"></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services</h2>
+          <p>Modular engagement: advice, hands-on delivery, or full ownership of a stream.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Architecture & APIs</h3>
+            <p>Domain modeling, service boundaries, API design, performance strategy, and secure patterns.</p>
+            <ul>
+              <li>System design workshops</li>
+              <li>API governance</li>
+              <li>Performance & scaling</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Cloud & DevOps</h3>
+            <p>Production-grade delivery pipelines, container platforms, and reliability foundations.</p>
+            <ul>
+              <li>CI/CD hardening</li>
+              <li>Docker/Kubernetes strategy</li>
+              <li>Observability (logs/metrics/traces)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>AI Integration</h3>
+            <p>Apply AI where it matters: automation, developer productivity, and smart workflows with controls.</p>
+            <ul>
+              <li>Agent + tool design</li>
+              <li>RAG / knowledge systems</li>
+              <li>Guardrails & auditing</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section section--alt" id="approach">
+      <div class="container">
+        <div class="section__head">
+          <h2>Bring it all together</h2>
+          <p>A clear process that turns complexity into momentum.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <div class="step__num">1</div>
+            <div class="step__body">
+              <div class="step__title">Discover</div>
+              <div class="step__text">Map goals, constraints, and production realities. Identify the fastest path to measurable wins.</div>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num">2</div>
+            <div class="step__body">
+              <div class="step__title">Design</div>
+              <div class="step__text">Choose the right architecture, delivery model, and guardrails for long-term scalability.</div>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num">3</div>
+            <div class="step__body">
+              <div class="step__title">Deliver</div>
+              <div class="step__text">Ship in increments. Automate the boring parts. Keep quality and security always-on.</div>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num">4</div>
+            <div class="step__body">
+              <div class="step__title">Scale</div>
+              <div class="step__text">SLOs, observability, cost control, and team practices—so the platform keeps improving.</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- OUTCOMES -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section__head">
+          <h2>Outcomes</h2>
+          <p>What teams typically gain after engagement.</p>
+        </div>
+
+        <div class="outcomes">
+          <div class="outcome">
+            <div class="outcome__title">Faster releases</div>
+            <div class="outcome__text">Less friction in build, test, and deploy—more time to create value.</div>
+          </div>
+          <div class="outcome">
+            <div class="outcome__title">Better reliability</div>
+            <div class="outcome__text">Observability + SLOs + incident readiness built into the delivery.</div>
+          </div>
+          <div class="outcome">
+            <div class="outcome__title">Lower risk</div>
+            <div class="outcome__text">Security and compliance patterns from day one—no expensive rework later.</div>
+          </div>
+          <div class="outcome">
+            <div class="outcome__title">AI that’s useful</div>
+            <div class="outcome__text">Automation that respects constraints, data boundaries, and production quality.</div>
+          </div>
+        </div>
+
+        <div class="quotes">
+          <div class="quote">
+            <div class="quote__text">“Clear architecture, fast delivery, and no surprises in production.”</div>
+            <div class="quote__by">— Delivery team</div>
+          </div>
+          <div class="quote">
+            <div class="quote__text">“We shipped improvements weekly while making the platform safer.”</div>
+            <div class="quote__by">— Engineering lead</div>
+          </div>
+          <div class="quote">
+            <div class="quote__text">“Finally: AI automation that helps without breaking trust.”</div>
+            <div class="quote__by">— Product owner</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>FAQ</h2>
+          <p>Quick answers, straight to the point.</p>
+        </div>
+
+        <div class="faq">
+          <details class="qa">
+            <summary>What size companies do you work with?</summary>
+            <p>From early-stage teams to established organizations—anywhere engineering needs clarity, delivery speed, and production confidence.</p>
+          </details>
+
+          <details class="qa">
+            <summary>Do you work hands-on or advisory only?</summary>
+            <p>Both. You can start with architecture + roadmap, then move into hands-on delivery (CI/CD, platform, services, automation).</p>
+          </details>
+
+          <details class="qa">
+            <summary>Can you help with performance and cost?</summary>
+            <p>Yes—profiling, caching, DB tuning, observability, and cloud cost optimization are common engagement streams.</p>
+          </details>
+
+          <details class="qa">
+            <summary>How do you approach AI safely?</summary>
+            <p>We build guardrails: data boundaries, auditability, evals, and fallbacks—so automation is helpful and trustworthy in production.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta">
+          <div class="cta__left">
+            <h2>Ready to launch?</h2>
+            <p>Send a short note and we’ll reply with next steps and a lightweight plan.</p>
+          </div>
+
+          <div class="cta__right">
+            <a class="btn btn--primary btn--lg" href="mailto:contact@scirale.net?subject=Project%20inquiry%20—%20Scirale%20Consulting">Email Scirale</a>
+            <a class="btn btn--ghost btn--lg" href="#services">View services</a>
+            <div class="cta__meta">Tip: press <strong>Ctrl/Cmd + K</strong> to open Launchpad.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="brand__mark" aria-hidden="true"></div>
+        <div>
+          <div class="footer__name">Scirale Consulting</div>
+          <div class="footer__small">Architecture • Cloud • AI automation</div>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:contact@scirale.net">Contact</a>
+      </div>
+
+      <div class="footer__small">© <span id="year"></span> Scirale Consulting. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Launchpad modal -->
+  <div class="modal" id="palette" aria-hidden="true">
+    <div class="modal__backdrop" id="paletteBackdrop"></div>
+    <div class="modal__card" role="dialog" aria-modal="true" aria-label="Launchpad">
+      <div class="modal__top">
+        <div class="modal__title">Launchpad</div>
+        <button class="iconBtn" id="closePalette" type="button" aria-label="Close">✕</button>
+      </div>
+
+      <input class="modal__input" id="paletteInput" placeholder="Type to navigate… (services, approach, faq, contact)" />
+
+      <div class="modal__list" id="paletteList">
+        <button class="modal__item" data-go="#services">
+          <span class="badge">↩</span> Services
+        </button>
+        <button class="modal__item" data-go="#approach">
+          <span class="badge">↩</span> Approach
+        </button>
+        <button class="modal__item" data-go="#work">
+          <span class="badge">↩</span> Outcomes
+        </button>
+        <button class="modal__item" data-go="#faq">
+          <span class="badge">↩</span> FAQ
+        </button>
+        <button class="modal__item" data-go="#contact">
+          <span class="badge">↩</span> Contact
+        </button>
+      </div>
+
+      <div class="modal__hint">
+        Press <strong>Esc</strong> to close.
+      </div>
+    </div>
   </div>
 
-  <div class="card">
-    <h2>Contact</h2>
-    <p>
-      Reach us at <a href="mailto:contact@scirale.tech">contact@scirale.tech</a>
-    </p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Scirale Consulting. All rights reserved.
-</footer>
-
+  <script src="./script.js"></script>
 </body>
 </html>
